@@ -4,7 +4,7 @@ $(function(){
 		ts = new Date(2016, 01, 7),
 		newYear = true;
 	
-	if((new Date()) > ts){
+	if((new Date()) < ts){
 		// The new year is here! Count towards something else.
 		// Notice the *1000 at the end - time must be in milliseconds
 		ts = (new Date()).getTime() + 10*24*60*60*1000;
